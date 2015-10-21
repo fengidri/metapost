@@ -19,6 +19,17 @@ con(db.e0 , dict.nw0);
 con(dict.e2 , dictht.nw0);
 con(dictht.e0, entry.nw0);
 
+
+vardef struct text items =
+    show 89;
+    for i := items:
+        show i;
+    endfor;
+enddef;
+
+
+struct db, , "dict ", "sdfadf", "adfadf";
+
 endfig;
     end
 

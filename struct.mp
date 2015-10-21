@@ -37,6 +37,7 @@ vardef offset@#(suffix last) =
 enddef;
 
 vardef con(expr s, e) =
+    pickup pencircle scaled 3;
     drawarrow s ... e withcolor green;
 enddef;
 
