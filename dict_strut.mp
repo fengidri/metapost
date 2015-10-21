@@ -20,15 +20,23 @@ con(dict.e2 , dictht.nw0);
 con(dictht.e0, entry.nw0);
 
 
-vardef struct text items =
+%vardef test(suffix s)
+%    s.s := 0;
+%enddef;
+
+vardef truct text items =
     show 89;
+    _i = 0;
     for i := items:
-        show i;
+        if _i = 0:
+            test(i);
+        fi;
     endfor;
+
 enddef;
 
 
-struct db, , "dict ", "sdfadf", "adfadf";
+%truct db, "dict ", "sdfadf", "adfadf";
 
 endfig;
     end
